@@ -1,0 +1,24 @@
+.jumbotron {
+	margin: 0 auto;
+	text-align: center;
+	background-color: #65B4A9;
+	font-family: 'Fredoka One', cursive;
+
+}
+.panel {
+	padding-bottom: 15px;
+	font-family: 'Chewy', cursive;
+	font-size: 24px;
+}
+form {
+	padding: 15px;
+}
+button {
+	margin-left: 15px;
+}
+
+td, tr {
+	width: 20%;
+	font-family: 'Chewy', cursive;
+	font-size: 16px
+}

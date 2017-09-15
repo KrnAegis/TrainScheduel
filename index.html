@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Train Scheduel!</title>
+
+	<script src="https://code.jquery.com/jquery.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script src="https://www.gstatic.com/firebasejs/4.3.1/firebase.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment-with-locales.min.js"></script>
+
+	<link rel="stylesheet" href="assets/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Chewy|Fredoka+One" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+	<div class="page-header jumbotron">
+	  <h1>All aboard! Train to everywhere!</h1>
+	</div>
+	<br><br>
+	<div class="panel panel-info">
+	  <div class="panel-heading">Currently running trains and whereabouts</div>
+
+	<table class="table">
+		  <tr>
+		  	<th>Train name</th>
+		  	<th>Destination</th>
+		  	<th>Frequency (min)</th>
+		  	<th>Next Arrival</th>
+		  	<th>Minutes Away</th>
+		  </tr>
+	</table>
+	<table id="trainInfo" class="table">
+	</table>
+		
+	  
+	</div>
+
+	<div class="panel panel-info">
+	  <div class="panel-heading">Add new train!</div>	
+		<form>
+		  <div class="form-group">
+		    <label for="formGroupExampleInput">Train name!</label>
+		    <input type="text" class="form-control" id="trainName" placeholder="What's the train name?">
+		  </div>
+		  <div class="form-group">
+		    <label for="formGroupExampleInput2">Destination!</label>
+		    <input type="text" class="form-control" id="trainDest" placeholder="Where is it going?">
+		  </div>
+		  <div class="form-group">
+		    <label for="formGroupExampleInput2">First Train Time (HH:mm-military time)</HH:mm></label>
+		    <input type="text" class="form-control" id="trainTime" placeholder="When is it arriving?">
+		  </div>
+		  <div class="form-group">
+		    <label for="formGroupExampleInput2">Frequency (min)</label>
+		    <input type="text" class="form-control" id="trainFreq" placeholder="How often does it come?">
+		  </div>
+		</form>
+		<button id="submitBtn" class="btn btn-danger">Submit</button>
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+<script type="text/javascript" src="assets/script.js"></script>
+</body>
+</html>
